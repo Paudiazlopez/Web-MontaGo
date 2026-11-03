@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # [Nombre de la Empresa Ficticia] - Sitio Web Corporativo
 ## 📝 Descripción
 Breve explicación de qué es la empresa y qué ofrece el sitio
@@ -19,6 +18,3 @@ web.
 - [x] Formulario de contacto
 - [x] Navegación funcional entre páginas
 =======
-# Web-MontaGo
-Web ficticia para proyecto de desarrollo web HTML y CSS3.
->>>>>>> 27a76fc64fa7011da907e3d2cdbb8a3f989d5788
