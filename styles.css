@@ -1,0 +1,472 @@
+/* ==========================================
+   ESTILOS GENERALES
+   ========================================== */
+
+/* Quita márgenes por defecto y hace que el tamaño de las cajas sea más fácil de calcular */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía y colores base de toda la web */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0B1020;   /* fondo oscuro */
+    color: #F8FAFC;              /* texto principal */
+    line-height: 1.6;
+}
+
+/* Las imágenes nunca se salen de su caja */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #F8FAFC;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* Caja centrada que limita el ancho del contenido */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Espacio vertical de cada sección */
+.seccion {
+    padding: 70px 0;
+}
+
+/* Fondo un poco distinto para separar secciones */
+.seccion-ventajas {
+    background-color: #0F1629;
+}
+
+.seccion-subtitulo {
+    color: #AAB4C8;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #2563EB;
+    color: #F8FAFC;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.boton:hover {
+    background-color: #1D4ED8;
+}
+
+.boton-secundario {
+    background-color: transparent;
+    border: 2px solid #2563EB;
+}
+
+.boton-secundario:hover {
+    background-color: #2563EB;
+}
+
+/* Botón blanco (para el bloque azul) */
+.boton-blanco {
+    background-color: #F8FAFC;
+    color: #0B1020;
+}
+
+.boton-blanco:hover {
+    background-color: #AAB4C8;
+}
+
+/* ==========================================
+   CABECERA Y LOGOTIPO
+   ========================================== */
+
+.cabecera {
+    background-color: #151D30;
+    padding: 15px 0;
+    border-bottom: 1px solid #243049;
+}
+
+/* Flexbox: logo, menú y botón en una fila */
+.cabecera-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-simbolo {
+    background-color: #2563EB;
+    color: #F8FAFC;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    width: 80px;
+    height: 50px;
+}
+
+.logo-texto {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #AAB4C8;
+}
+
+.menu a:hover {
+    color: #F8FAFC;
+}
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+.hero {
+    padding: 80px 0;
+}
+
+/* Flexbox: texto a un lado e imagen al otro */
+.hero-contenido {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto p {
+    color: #AAB4C8;
+    font-size: 1.1rem;
+    margin: 20px 0 30px 0;
+}
+
+.hero-imagen {
+    flex: 1;
+}
+
+.hero-imagen img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.centrado {
+    justify-content: center;
+}
+
+/* ==========================================
+   TARJETAS DE PRODUCTOS
+   ========================================== */
+
+/* 3 columnas en escritorio */
+.rejilla-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: #151D30;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.tarjeta img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.tarjeta p {
+    color: #AAB4C8;
+    margin-bottom: 12px;
+}
+
+.precio {
+    color: #F8FAFC !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ==========================================
+   VENTAJAS Y VALORES
+   ========================================== */
+
+.rejilla-ventajas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.ventaja {
+    background-color: #151D30;
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.ventaja p {
+    color: #AAB4C8;
+}
+
+.icono {
+    display: inline-block;
+    background-color: #2563EB;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   LLAMADA A LA ACCIÓN
+   ========================================== */
+
+.llamada-accion {
+    background-color: #2563EB;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.llamada-accion p {
+    margin-bottom: 25px;
+}
+
+/* ==========================================
+   PÁGINA SOBRE MÍ
+   ========================================== */
+
+.enlace-volver {
+    color: #AAB4C8;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.enlace-volver:hover {
+    color: #F8FAFC;
+}
+
+/* Tarjeta de perfil: foto + texto */
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #151D30;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.perfil img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.perfil p {
+    color: #AAB4C8;
+}
+
+.rol {
+    color: #2563EB !important;
+    font-weight: bold;
+    margin: 5px 0 15px 0;
+}
+
+/* Habilidades */
+.rejilla-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.habilidad {
+    background-color: #151D30;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-left: 4px solid #2563EB;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.pie {
+    background-color: #151D30;
+    padding-top: 50px;
+    border-top: 1px solid #243049;
+}
+
+/* Columnas del footer con Flexbox */
+.pie-contenido {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.pie-columna {
+    flex: 1;
+}
+
+.pie-columna p {
+    color: #AAB4C8;
+    margin-top: 10px;
+}
+
+.pie-columna ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.pie-columna li {
+    margin-bottom: 6px;
+}
+
+.pie-columna li a {
+    color: #AAB4C8;
+}
+
+.pie-columna li a:hover {
+    color: #F8FAFC;
+}
+
+.nota {
+    font-size: 0.9rem;
+}
+
+/* Formulario */
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #243049;
+    background-color: #0B1020;
+    color: #F8FAFC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+.derechos {
+    text-align: center;
+    color: #AAB4C8;
+    padding: 25px 0;
+    margin-top: 30px;
+    border-top: 1px solid #243049;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+
+    .rejilla-productos,
+    .rejilla-habilidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rejilla-ventajas {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cabecera-contenido {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-contenido,
+    .perfil,
+    .pie-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-botones {
+        justify-content: center;
+    }
+
+    /* Todo a una columna */
+    .rejilla-productos,
+    .rejilla-habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .seccion,
+    .hero {
+        padding: 45px 0;
+    }
+}
